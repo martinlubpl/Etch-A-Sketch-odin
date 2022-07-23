@@ -1,5 +1,8 @@
 const container = document.querySelector(".container")
-makeGrid(16)
+const reset = document.querySelector(".reset")
+
+let pixels = 16
+makeGrid(pixels)
 
 function makeGrid(pixels) {
     all_pixels = pixels ** 2;
@@ -10,7 +13,12 @@ function makeGrid(pixels) {
         pixel.classList.add('cleared');
         container.appendChild(pixel);
         pixel.addEventListener('mouseover', (e) => {
-            e.target.style.backgroundColor = "black";
+            e.target.style.backgroundColor = "#aaa";
         })
     }
 }
+
+reset.addEventListener('click', (e) => {
+    container.innerText = "";
+    makeGrid(pixels)
+})

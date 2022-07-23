@@ -14,11 +14,27 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
+    /* background-color: aqua; */
     border: 1px solid #aaa;
 }
 
 .cleared {
-    background-color: red;
+    /* background-color: red; */
     border-radius: 2px;
+}
+.controls {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin: 20px auto;
+    
+}
+.reset {
+    border: 1px solid #aaa;
+    background-color: rgb(234, 82, 27);
+    font-size: smaller;
+    font-weight: 700;
+    color: #eee;
+    padding: 5px 20px;
+    border-radius: 5px;
 }
