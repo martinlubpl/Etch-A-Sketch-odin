@@ -1,0 +1,24 @@
+header {
+    text-align: center;
+    display: block;
+    font-size: 100px;
+    margin: 20px;
+}
+
+.container {
+    margin: auto;
+    /* box-sizing: border-box; */
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    border: 1px solid #aaa;
+}
+
+.cleared {
+    background-color: red;
+    border-radius: 2px;
+}
